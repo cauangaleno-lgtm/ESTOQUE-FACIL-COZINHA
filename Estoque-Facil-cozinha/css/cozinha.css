@@ -1,0 +1,219 @@
+/* Menu Lateral */
+#navbar {
+    width: 75px;
+    height: 100%;
+    box-shadow: 1px 0px rgb(2, 6, 54);
+    background: #E48044;
+
+}
+
+#container {
+    height: 100%;
+    background: #E48044;
+}
+
+#navbar-itens {
+    align-items: center;
+}
+
+a {
+    color: #1F364B;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 5%;
+    display: flex;
+}
+
+.icon {
+    font-size: 20pt;
+}
+
+#offcanvasNavbar {
+    background: #E48044;
+}
+
+/* Header */
+header {
+    margin-top: 20px;
+    margin-left: 90px;
+    color: #1F364B;
+}
+
+#header-icon {
+    color: #8C262F;
+}
+
+/* Main */
+body {
+    background: #E6DCD5;
+}
+
+main {
+    margin-left: 78px;
+}
+
+/* Cards */
+
+.minha-lista-flex {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.minha-lista-flex li {
+  flex: 1 1 calc(33.33% - 1.5rem);
+  display: flex;
+  justify-content: center;
+}
+
+.card-recebido,
+.card-andamento,
+.card-concluido {
+  border: 1px solid #e0d8d3;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-recebido:hover,
+.card-andamento:hover,
+.card-concluido:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.status {
+  background-color: #dcd1ca;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status.recebido {
+  background-color: #ffe3cc;
+  color: #8b5a00;
+}
+
+.status.andamento {
+  background-color: #ffcccc;
+  color: #8b0000;
+}
+
+.status.concluido {
+  background-color: #ffe4b5;
+  color: #b3a700;
+}
+
+.observacoes-box,
+.receita-box {
+  background-color: #e6e6e6;
+  border-left: 4px solid #b22222;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.receita-box {
+  border-left: 4px solid #f28b3f;
+}
+
+/* botoes */
+
+.btn {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-alerta {
+  background-color: #b22222;
+  color: white;
+}
+.btn-alerta:hover {
+  background-color: #8b1a1a;
+}
+
+.btn-iniciar,
+.btn-concluir {
+  background-color: #f28b3f;
+  color: white;
+}
+.btn-iniciar:hover,
+.btn-concluir:hover {
+  background-color: #d9772d;
+}
+
+/* cor card */
+
+.card-recebido {
+  background: #fff6f0;
+  border-color: #e6d5b8;
+}
+.card-andamento {
+  background: #fff5f5;
+  border-color: #f5c2c7;
+}
+
+.card-concluido {
+  background: #fffaf0;
+  border-color: #e6d5b8;
+}
+
+/* mobile (menos de 768px): */
+
+@media (max-width: 767px) {
+  .minha-lista-flex li {
+    flex: 1 1 100%;
+  }
+
+  .pedido-card,
+  .card-andamento,
+  .card-concluido {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  h5, h6, p, small {
+    font-size: 1rem;
+  }
+
+  .status {
+    font-size: 0.95rem;
+  }
+}
+
+/* tablets e acima (768px+):*/
+
+@media (min-width: 768px) {
+  .minha-lista-flex li {
+    flex: 1 1 calc(33.33% - 1.5rem);
+  }
+}
+
+/* telas grandes (1200px+):*/
+
+@media (min-width: 1200px) {
+  .btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+  h6 {
+    font-size: 1.1rem;
+  }
+}
